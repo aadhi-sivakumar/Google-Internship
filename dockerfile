@@ -11,7 +11,7 @@ COPY package.json yarn.lock* package-lock.json* ./
 
 # Install dependencies (use npm ci for clean installs if using npm, or yarn install for yarn)
 # For npm:
-RUN npm ci --prefer-offline --no-audit
+RUN npm install --prefer-offline --no-audit
 
 # For Yarn (uncomment if you're using Yarn):
 # RUN yarn install --frozen-lockfile
