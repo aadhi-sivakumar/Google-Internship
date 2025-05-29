@@ -6,7 +6,7 @@ steps:
   args: ['push', 'gcr.io/sprinternship-dal-2025/google-internship']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'my-next-app', '--image', 'gcr.io/sprinternship-dal-2025/my-next-app', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated'] # Adjust region and other args as needed
+  args: ['run', 'deploy', 'google-internship', '--image', 'gcr.io/sprinternship-dal-2025/google-internship', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated'] # Adjust region and other args as needed
 
 options:
   # Use one of these:
