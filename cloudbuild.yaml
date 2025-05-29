@@ -9,5 +9,5 @@ steps:
   args: ['run', 'deploy', 'my-next-app', '--image', 'gcr.io/sprinternship-dal-2025/my-next-app', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated'] # Adjust region and other args as needed
 
 options:
-  # This is the line you need to add
-  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+  # Use one of these:
+  logging: CLOUD_LOGGING_ONLY
